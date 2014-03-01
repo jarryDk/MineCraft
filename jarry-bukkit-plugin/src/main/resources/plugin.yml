@@ -1,9 +1,9 @@
-name: MyPlugin
-main: dk.jarry.bukkit.MyPlugin
+name: JarryPlugin
+main: dk.jarry.bukkit.JarryPlugin
 version: 0.1
-description: My first minecraft plugin
+description: jarryDks bukkit plugin
 
 commands:
-   mycommand:
+   jarrycommand:
       description: A Command
       usage: /<command> 

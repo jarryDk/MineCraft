@@ -5,11 +5,14 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 
-public class MyEventListener implements Listener {
+/**
+ * @author Michael Bornholdt Nielsen <mni@jarry.dk>
+ */
+public class SendMsgToAllPlayersBlockListener implements Listener {
 
-    private MyPlugin plugin;
+    private JarryPlugin plugin;
 
-    public MyEventListener(MyPlugin plugin) {
+    public SendMsgToAllPlayersBlockListener(JarryPlugin plugin) {
         this.plugin = plugin;
     }
 
@@ -19,4 +22,5 @@ public class MyEventListener implements Listener {
     public void onBlockPlace(BlockPlaceEvent event) {
         Bukkit.getServer().broadcastMessage("Player " + event.getPlayer().getName() + " placed " + event.getBlock().getType() + " at " + event.getBlock().getLocation());
     }
+    
 }
