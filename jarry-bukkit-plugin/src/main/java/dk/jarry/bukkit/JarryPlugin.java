@@ -1,5 +1,6 @@
 package dk.jarry.bukkit;
 
+import dk.jarry.bukkit.command.JarryCommandExecutor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -7,6 +8,9 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author Michael Bornholdt Nielsen <mni@jarry.dk>
  */
 public class JarryPlugin extends JavaPlugin {
+    
+    public static String VERSION = "0.1";
+    public static String AUTHOR = "Michael Bornholdt Nielsen <mni@jarry.dk>";
 
     private final JarryCommandExecutor commandExecutor = new JarryCommandExecutor(this);
 
@@ -19,12 +23,14 @@ public class JarryPlugin extends JavaPlugin {
 
         PluginManager pm = this.getServer().getPluginManager();
 
-        getCommand("jarrycommand").setExecutor(commandExecutor);
-
+        getCommand("jarry").setExecutor(commandExecutor);
+/*
         pm.registerEvents(new SendMsgToPlayerPlayerMoveListener(this), this);
         pm.registerEvents(new SendMsgToAllPlayersBlockListener(this), this);
         pm.registerEvents(new SendMsgToPlayerBlockListener(this), this);
+        */
         pm.registerEvents(new CancelDamageEntityDamageListener(this), this);
+        
 
     }
     

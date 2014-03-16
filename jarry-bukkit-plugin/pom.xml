@@ -7,7 +7,7 @@
     <groupId>dk.jarry.bukkit</groupId>
     <artifactId>jarry-bukkit-plugin</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <name>Jarry Bukkit Plugin</name>
     <url>http://maven.apache.org</url>
     
@@ -27,6 +27,7 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    
     <build>
         <plugins>
             <plugin>
@@ -40,4 +41,5 @@
             </plugin>
         </plugins>
     </build>
+    
 </project>

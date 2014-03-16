@@ -4,6 +4,6 @@ version: 0.1
 description: jarryDks bukkit plugin
 
 commands:
-   jarrycommand:
+   jarry:
       description: A Command
-      usage: /<command> 
+      usage: /<command> <option>
