@@ -1,6 +1,11 @@
 #Jarry Forge Mod
 
-This mod is build and teted on forge-1.7.10-10.13.2.1263.
+This mod is build and tested on forge-1.7.10-10.13.2.1263.
+
+This mod add one item and one block to the game. The item is to be found on an new creative tab. The item, block and creative tab have nice labels.
+
+Part of the mod is from [Devoxx4kids -> Workshops -> Minecraft] (https://github.com/devoxx4kids/materials/tree/master/workshops/minecraft)
+
 
 ##Links
 
