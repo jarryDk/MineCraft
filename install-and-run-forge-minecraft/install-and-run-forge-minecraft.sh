@@ -1,5 +1,5 @@
 #!/bin/bash
-#uri :
+#uri :https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft.sh
 #title :install-and-run-forge-minecraft.sh
 #description :Install and run forge minecraft version 1.7.10
 #author :Michael Bornholdt Nielsen
