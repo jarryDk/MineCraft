@@ -15,22 +15,26 @@ FORGE_INSTALLER_JAR=forge-$FORGE_VERSION-installer.jar
 FORGE_UNIVERSON_JAR=forge-$FORGE_VERSION-universal.jar
 FORGE_INSTALLER_JAR_DOWNLOAD=http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSION/$FORGE_INSTALLER_JAR
 
-if [ ! -e "FORGE_INSTALLER_JAR" ]; then
-	wget $MINECRAFT_JAR_DOWNLOAD
-fi
-
-if [ ! -e "FORGE_INSTALLER_JAR" ]; then
-	wget $FORGE_INSTALLER_JAR_DOWNLOAD
-fi
-
 if [ ! -e "eula.txt" ]; then
 cat > eula.txt << "EOF"
 eula=true
 EOF
 fi
 
-java -cp .:minecraft_server.1.7.10.jar:forge-1.7.10-10.13.2.1286-installer.jar cpw.mods.fml.installer.SimpleInstaller --installServer
+if [ ! -e "$FORGE_UNIVERSON_JAR" ]; then
+
+  if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
+	wget $MINECRAFT_JAR_DOWNLOAD
+  fi
+
+  if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
+	wget $FORGE_INSTALLER_JAR_DOWNLOAD
+  fi
+
+  java -cp .:minecraft_server.1.7.10.jar:forge-1.7.10-10.13.2.1286-installer.jar cpw.mods.fml.installer.SimpleInstaller --installServer
+
+fi
+
 
 java -Xmx1G -Xms1G -jar forge-1.7.10-10.13.2.1286-universal.jar nogui
-
 
