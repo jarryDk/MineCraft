@@ -8,23 +8,27 @@ Part of the mod is from [Devoxx4kids -> Workshops -> Minecraft] (https://github.
 
 ##Forge Development kit
 
-Get the sourcecode from [files.minecraftforge.net](http://files.minecraftforge.net/minecraftforge/1.8)
+Get the sourcecode from [files.minecraftforge.net](http://files.minecraftforge.net/minecraftforge)
 
-Unzip the sourcecode and navigate to the folder. On my computer this is /home/michael/MineCraft/Forge/forge-1.8-11.14.0.1295-1.8-src
+Unzip the sourcecode and navigate to the folder. On my computer this is /home/michael/MineCraft/Forge/forge-1.7.10-10.13.2.1263-src
 
-[michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ cd /home/michael/MineCraft/Forge/forge-1.8-11.14.0.1295-1.8-src
+[michael@localhost forge-1.7.10-10.13.2.1263-src]$ cd /home/michael/MineCraft/Forge/forge-1.7.10-10.13.2.1263-src
 
-[michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ chmod +x gradlew
+[michael@localhost forge-1.7.10-10.13.2.1263-src]$ chmod +x gradlew
 
 The next task is going to take some time +5 min
 
-[michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ ./gradlew setupDecompWorkspace
+[michael@localhost forge-1.7.10-10.13.2.1263-src]$ ./gradlew setupDecompWorkspace
 
-[michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ ./gradlew eclipse
+[michael@localhost forge-1.7.10-10.13.2.1263-src]$ ./gradlew eclipse
 
 Time to download [Eclipse](https://eclipse.org/downloads/) - just pick Eclipse IDE for Java Developers.
 
-Launch Eclipse and select /home/michael/MineCraft/Forge/forge-1.8-11.14.0.1295-1.8-src/eclipse as workspace.
+Launch Eclipse and select /home/michael/MineCraft/Forge/forge-1.7.10-10.13.2.1263-src/eclipse as workspace.
+
+To build a jar file run
+
+[michael@localhost forge-1.7.10-10.13.2.1263-src]$ ./gradlew build
 
 More info aboute [Getting Started with ForgeGradle](http://www.minecraftforge.net/forum/index.php?topic=14048.0) from the minecraftforge.net forum.
 
