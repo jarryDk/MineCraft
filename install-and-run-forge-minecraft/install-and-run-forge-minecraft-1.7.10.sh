@@ -23,17 +23,13 @@ EOF
 fi
 
 if [ ! -e "$FORGE_UNIVERSON_JAR" ]; then
-
   if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
 	wget $MINECRAFT_JAR_DOWNLOAD
   fi
-
   if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
 	wget $FORGE_INSTALLER_JAR_DOWNLOAD
   fi
-
   java -cp .:$MINECRAFT_JAR:forge-$FORGE_INSTALLER_JAR cpw.mods.fml.installer.SimpleInstaller --installServer
-
 fi
 
 java -Xmx1G -Xms1G -jar $FORGE_UNIVERSON_JAR nogui

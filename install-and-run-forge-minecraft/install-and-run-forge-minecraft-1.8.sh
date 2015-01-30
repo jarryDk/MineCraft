@@ -1,7 +1,7 @@
 
 #!/bin/bash
 #uri :https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft-1.8.sh
-#title :install-and-run-forge-minecraft.sh
+#title :install-and-run-forge-minecraft-1.8.sh
 #description :Install and run forge minecraft version 1.8
 #author :Michael Bornholdt Nielsen
 #date :20150130
@@ -23,13 +23,13 @@ EOF
 fi
 
 if [ ! -e "$FORGE_UNIVERSON_JAR" ]; then
-	if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
-		wget $MINECRAFT_JAR_DOWNLOAD
-	fi
-	if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
-		wget $FORGE_INSTALLER_JAR_DOWNLOAD
-	fi
-	java -cp .:$MINECRAFT_JAR:$FORGE_INSTALLER_JAR cpw.mods.fml.installer.SimpleInstaller --installServer
+  if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
+    wget $MINECRAFT_JAR_DOWNLOAD
+  fi
+  if [ ! -e "$FORGE_INSTALLER_JAR" ]; then
+    wget $FORGE_INSTALLER_JAR_DOWNLOAD
+  fi
+  java -cp .:$MINECRAFT_JAR:$FORGE_INSTALLER_JAR cpw.mods.fml.installer.SimpleInstaller --installServer
 fi
 
 java -Xmx1G -Xms1G -jar $FORGE_UNIVERSON_JAR nogui

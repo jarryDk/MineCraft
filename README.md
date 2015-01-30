@@ -3,10 +3,26 @@ MineCraft
 
 MineCraft stuff
 
-[Devoxx4kids -> Workshops -> Minecraft] (https://github.com/devoxx4kids/materials/tree/master/workshops/minecraft)
+install-and-run-forge-minecraft
+---
+Shell script to install MineCraft forge on Linux
+
+Versions
+
+- 1.7.10
+- 1.8 
+
+jarry-forge-mod
+---
+Mod showing how-to build item, blocks and add to creative tab.
+
+[SourceCode] (https://github.com/jarryDk/MineCraft/tree/master/jarry-forge-mod)
+
 
 jarry-bukkit-plugin
 ---
+Simpel mod for bukkit - R.I.P.
+
 [SourceCode] (https://github.com/jarryDk/MineCraft/tree/master/jarry-bukkit-plugin)
 
 Created using
@@ -14,7 +30,7 @@ Created using
 
 Read more on [Minecraft Workshop Instructions](https://java4kids.java.net/minecraft-workshop/mar2013/steps.html) post by  [Arun Gupta](https://twitter.com/arungupta)
 
-jarry-forge-mod
+Links
 ---
+[Devoxx4kids -> Workshops -> Minecraft] (https://github.com/devoxx4kids/materials/tree/master/workshops/minecraft)
 
-[SourceCode] (https://github.com/jarryDk/MineCraft/tree/master/jarry-forge-mod)
