@@ -1,16 +1,18 @@
 #install-and-run-forge-minecraft
 
-[install-and-run-forge-minecraft.sh] (https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft.sh)
+[install-and-run-forge-minecraft-1.8.sh] (https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft-1.8.sh)
+
+[install-and-run-forge-minecraft-1.7.10.sh] (https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft-1.7.10.sh)
 
 Fetch
 
-    minecraft_server.1.7.10.jar
-    forge-1.7.10-10.13.2.1286-installer.jar
+    minecraft_server.<MINECRAFT_VERSION>.jar
+    forge-<FORGE_MINECRAFT_VERSION>-installer.jar
 
 Create the eula.txt file
 
 Then runs
 
-    java -cp .:minecraft_server.1.7.10.jar:forge-1.7.10-10.13.2.1286-installer.jar cpw.mods.fml.installer.SimpleInstaller --installServer
-    java -Xmx1G -Xms1G -jar forge-1.7.10-10.13.2.1286-universal.jar nogui
+    java -cp .:minecraft_server.<MINECRAFT_VERSION>.jar:forge-<FORGE_MINECRAFT_VERSION>-installer.jar cpw.mods.fml.installer.SimpleInstaller --installServer
+    java -Xmx1G -Xms1G -jar forge-<FORGE_MINECRAFT_VERSION>-universal.jar nogui
 
