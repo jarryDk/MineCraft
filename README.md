@@ -5,6 +5,12 @@ MineCraft stuff
 
 If one can have a favorit seed, my would be 5065005039813119575.
 
+[Updating 1.7 to 1.8 Part 1: Setup & Mod file](http://www.wuppy29.com/minecraft/1-8-tutorial/updating-1-7-to-1-8-part-1-setup-mod-file/#sthash.nU3o5lgg.dpbs)
+
+[Updating 1.7 to 1.8 Part 2: Basic Items](http://www.wuppy29.com/minecraft/1-8-tutorial/updating-1-7-to-1-8-part-2-basic-items/#sthash.l5cvjfH8.dpbs)
+
+[How to update your mod to 1.8](http://www.minecraftforge.net/forum/index.php/topic,24263.0.html)
+
 install-and-run-forge-minecraft
 ---
 Shell script to install MineCraft forge on Linux
