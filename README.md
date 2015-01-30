@@ -3,6 +3,8 @@ MineCraft
 
 MineCraft stuff
 
+If one can have a favorit seed, my would be 5065005039813119575.
+
 install-and-run-forge-minecraft
 ---
 Shell script to install MineCraft forge on Linux
