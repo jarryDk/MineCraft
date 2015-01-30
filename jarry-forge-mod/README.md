@@ -19,6 +19,7 @@ Unzip the sourcecode and navigate to the folder. On my computer this is /home/mi
 The next task is going to take some time +5 min
 
 [michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ ./gradlew setupDecompWorkspace
+
 [michael@localhost forge-1.8-11.14.0.1295-1.8-src]$ ./gradlew eclipse
 
 Time to download [Eclipse](https://eclipse.org/downloads/) - just pick Eclipse IDE for Java Developers.
