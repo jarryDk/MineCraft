@@ -26,7 +26,7 @@ Time to download [Eclipse](https://eclipse.org/downloads/) - just pick Eclipse I
 
 Launch Eclipse and select /home/michael/MineCraft/Forge/forge-1.8-11.14.0.1295-1.8-src/eclipse as workspace.
 
-[Getting Started with ForgeGradle](http://www.minecraftforge.net/forum/index.php?topic=14048.0)
+More info aboute [Getting Started with ForgeGradle](http://www.minecraftforge.net/forum/index.php?topic=14048.0) from the minecraftforge.net forum.
 
 ##Links
 
