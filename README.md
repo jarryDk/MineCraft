@@ -35,6 +35,7 @@ NB: It will not run on [Minecraft Forge version 1.8](http://files.minecraftforge
 
 jarry-bukkit-plugin
 ---
+
 Simpel mod for bukkit - R.I.P.
 
 [SourceCode] (https://github.com/jarryDk/MineCraft/tree/master/jarry-bukkit-plugin)
