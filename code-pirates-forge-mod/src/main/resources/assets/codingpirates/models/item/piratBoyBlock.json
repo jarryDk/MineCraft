@@ -1,5 +1,5 @@
 {
-    "parent": "codingpirates:block/piratBlock",
+    "parent": "codingpirates:block/piratBoyBlock",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

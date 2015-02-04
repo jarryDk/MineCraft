@@ -6,11 +6,11 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class PiratBlock extends Block {
+public class PiratGirlBlock extends Block {
 	
-	private final String name = "piratBlock";
+	private final String name = "piratGirlBlock";
 
-	public PiratBlock() {
+	public PiratGirlBlock() {
 		super(Material.ground);
 		// GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(CodingPiratesMod.MODID + "_" + name);

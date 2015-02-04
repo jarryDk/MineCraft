@@ -3,6 +3,6 @@ code-pirates-forge-mod
 
 Code Pirates Forge Mod run on version 1.8
 
-Download [codingpirates-1.0.jar](codingpirates-1.0.jar?raw=true)
+Download [codingpirates-0.2.jar](codingpirates-0.2.jar?raw=true)
 
-The mod add a block and an item.
+This mod add a Boy Coding Pirat, Girl Coding Pirat as Blocks and Coding Pirat Leg as Item.

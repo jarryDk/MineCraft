@@ -11,26 +11,31 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import dk.codingpirates.minecraft.mods.block.PiratBlock;
+import dk.codingpirates.minecraft.mods.block.PiratBoyBlock;
+import dk.codingpirates.minecraft.mods.block.PiratGirlBlock;
 import dk.codingpirates.minecraft.mods.item.PiratItem;
 
 @Mod(modid = CodingPiratesMod.MODID, version = CodingPiratesMod.VERSION, name = CodingPiratesMod.NAME)
 public class CodingPiratesMod {
 
 	public static final String MODID = "codingpirates";
-	public static final String VERSION = "1.0";
-	public static final String NAME = "Coding Pirates test mod";
+	public static final String VERSION = "0.2";
+	public static final String NAME = "Coding Pirates mod";
 	
-	public static Block piratBlock;
+	public static Block piratBoyBlock;
+	public static Block piratGirlBlock;
+	
 	public static Item piratItem;
 
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 
 		// blocks
-		piratBlock = new PiratBlock();
-		GameRegistry.registerBlock(piratBlock, "piratBlock");
-
+		piratBoyBlock = new PiratBoyBlock();
+		GameRegistry.registerBlock(piratBoyBlock, "piratBoyBlock");
+		piratGirlBlock = new PiratGirlBlock();
+		GameRegistry.registerBlock(piratGirlBlock, "piratGirlBlock");
+		
 		// items
 		piratItem = new PiratItem();
 		GameRegistry.registerItem(piratItem, "piratItem");
@@ -46,13 +51,22 @@ public class CodingPiratesMod {
 			// blocks
 			renderItem.getItemModelMesher()
 					.register(
-							Item.getItemFromBlock(piratBlock),
+							Item.getItemFromBlock(piratBoyBlock),
 							0,
 							new ModelResourceLocation(
 									CodingPiratesMod.MODID
 											+ ":"
-											+ ((PiratBlock) piratBlock)
+											+ ((PiratBoyBlock) piratBoyBlock)
 													.getName(), "inventory"));
+			renderItem.getItemModelMesher()
+			.register(
+					Item.getItemFromBlock(piratGirlBlock),
+					0,
+					new ModelResourceLocation(
+							CodingPiratesMod.MODID
+									+ ":"
+									+ ((PiratGirlBlock) piratGirlBlock)
+											.getName(), "inventory"));
 
 			// items
 			renderItem.getItemModelMesher().register(

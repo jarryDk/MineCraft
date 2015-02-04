@@ -1,5 +1,3 @@
-tile.piratBlock.name=Code Pirat Block
+tile.codingpirates_piratBoyBlock.name=Code Pirat Boy
+tile.codingpirates_piratGirlBlock.name=Code Pirat Girl
 item.piratItem.name=Code Pirat Item
-
-tile.codingpirates_piratBlock.name=Code Pirat Block
-item.codingpirates_piratItem.name=Code Pirat Item

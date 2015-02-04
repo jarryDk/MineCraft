@@ -1,7 +1,7 @@
 [
 {
   "modid": "codingpirates",
-  "name": "Coding Pirates test mod",
+  "name": "Coding Pirates mod",
   "description": "Vi skal se hvad det kan drives til...",
   "version": "${version}",
   "mcversion": "${mcversion}",
