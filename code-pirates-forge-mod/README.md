@@ -1,7 +1,7 @@
 code-pirates-forge-mod
 =========
 
-Code Pirates Forge Mod run on version 1.8
+Code Pirates Mod run on [Minecraft Forge version 1.8](http://files.minecraftforge.net/minecraftforge/1.8)
 
 Download [codingpirates-0.2.jar](release/codingpirates-0.2.jar?raw=true)
 
