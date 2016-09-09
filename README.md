@@ -59,3 +59,7 @@ Links
 [MinecraftByExample - Forge 1.10+] (https://github.com/TheGreyGhost/MinecraftByExample)
 
 [MODDING TUTORIALS - Minecraft Mods &amp; Modding by BedrockMiner] (http://bedrockminer.jimdo.com/modding-tutorials/)
+
+[MinecraftForge Documentation] (https://mcforge.readthedocs.io/en/latest/)
+
+[List of Open Source Forge Mods] (https://github.com/agaricusb/ForgeMod/wiki/List-of-Open-Source-Forge-Mods)
