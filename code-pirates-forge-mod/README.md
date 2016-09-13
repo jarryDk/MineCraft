@@ -5,7 +5,7 @@ code-pirates-forge-mod
 13. september 2016
 ---
 
-Code Pirates Mod updated to version 0.3 ot match version 1.10 of forge.
+Code Pirates Mod updated to version 0.3 to match version 1.10 of forge.
 
 [Minecraft Forge](http://files.minecraftforge.net/#Downloads)
 

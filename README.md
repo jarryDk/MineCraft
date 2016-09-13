@@ -6,7 +6,7 @@ If one can have a favorit seed, my would be 5065005039813119575.
 code-pirates-forge-mod
 ---
 
-Code Pirates Mod run on [Minecraft Forge version 1.8](http://files.minecraftforge.net/minecraftforge/1.8)
+Code Pirates Mod run on [Minecraft Forge version 1.10](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.10.html) and [Minecraft Forge version 1.8](http://files.minecraftforge.net/minecraftforge/1.8)
 
 This mod add a Boy Coding Pirat, Girl Coding Pirat as Blocks and Coding Pirat Leg as Item.
 
