@@ -12,7 +12,7 @@ public class PiratItem extends Item {
 	public PiratItem() {
 		// GameRegistry.registerItem(this, name);
 		setUnlocalizedName(CodingPiratesMod.MODID + "_" + name);
-		setCreativeTab(CreativeTabs.tabMisc);
+		setCreativeTab(CreativeTabs.TOOLS);
 	}
 
 	public String getName() {

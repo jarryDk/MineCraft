@@ -11,10 +11,10 @@ public class PiratBoyBlock extends Block {
 	private final String name = "piratBoyBlock";
 
 	public PiratBoyBlock() {
-		super(Material.ground);
+		super(Material.GOURD);
 		// GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(CodingPiratesMod.MODID + "_" + name);
-		setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
 
 	public String getName() {

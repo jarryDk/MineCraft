@@ -1,9 +1,12 @@
 package dk.codingpirates.minecraft.mods;
 
+import dk.codingpirates.minecraft.mods.block.PiratBoyBlock;
+import dk.codingpirates.minecraft.mods.block.PiratGirlBlock;
+import dk.codingpirates.minecraft.mods.item.PiratItem;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.RenderItem;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.client.renderer.RenderItem;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -11,15 +14,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import dk.codingpirates.minecraft.mods.block.PiratBoyBlock;
-import dk.codingpirates.minecraft.mods.block.PiratGirlBlock;
-import dk.codingpirates.minecraft.mods.item.PiratItem;
 
 @Mod(modid = CodingPiratesMod.MODID, version = CodingPiratesMod.VERSION, name = CodingPiratesMod.NAME)
 public class CodingPiratesMod {
 
 	public static final String MODID = "codingpirates";
-	public static final String VERSION = "0.2";
+	public static final String VERSION = "0.3";
 	public static final String NAME = "Coding Pirates mod";
 	
 	public static Block piratBoyBlock;
