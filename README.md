@@ -63,3 +63,7 @@ Links
 [MinecraftForge Documentation] (https://mcforge.readthedocs.io/en/latest/)
 
 [List of Open Source Forge Mods] (https://github.com/agaricusb/ForgeMod/wiki/List-of-Open-Source-Forge-Mods)
+
+[github.com/lorddusk] (https://github.com/lorddusk)
+
+[github.com/TheRoBrit] (https://github.com/TheRoBrit)
