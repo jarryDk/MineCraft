@@ -67,3 +67,5 @@ Links
 [github.com/lorddusk] (https://github.com/lorddusk)
 
 [github.com/TheRoBrit] (https://github.com/TheRoBrit)
+
+[Forge_Tutorials](https://github.com/coolAlias/Forge_Tutorials)
