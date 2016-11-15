@@ -22,16 +22,27 @@ public class PiratBoyBlock extends Block {
 	}
 	
 	@Override
-	public void onBlockDestroyedByPlayer(World worldIn, BlockPos pos, IBlockState state) {
+	public void onBlockDestroyedByPlayer(World worldIn, 
+											BlockPos pos, 
+											IBlockState state) {
 		super.onBlockDestroyedByPlayer(worldIn, pos, state);
 
 		List<EntityPlayer> playerEntities = worldIn.playerEntities;
 
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		
 		if (worldIn.isRemote) {
 
 			for (EntityPlayer player : playerEntities) {
 				player.addChatComponentMessage(
-						new TextComponentString(TextFormatting.GREEN + "Nogen har ødelagt en mor blok!"));
+						new TextComponentString(
+								TextFormatting.GREEN 
+								+ "Nogen har ødelagt en mor blok!"
+								+"x:" + x 
+								+ " - y:" + y
+								+ " - z:" + z));
 			}
 
 		}
