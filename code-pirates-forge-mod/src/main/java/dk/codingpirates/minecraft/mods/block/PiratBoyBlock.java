@@ -21,6 +21,7 @@ public class PiratBoyBlock extends Block {
 		return name;
 	}
 	
+	
 	@Override
 	public void onBlockDestroyedByPlayer(World worldIn, 
 											BlockPos pos, 
@@ -32,6 +33,11 @@ public class PiratBoyBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
+
+		Block tnt = Blocks.TNT;
+		IBlockState defaultState = tnt.getDefaultState();
+		Block redstone = Blocks.REDSTONE_BLOCK;
+		IBlockState defaultState2 = redstone.getDefaultState();
 		
 		if (worldIn.isRemote) {
 
@@ -44,9 +50,16 @@ public class PiratBoyBlock extends Block {
 								+ " - y:" + y
 								+ " - z:" + z));
 			}
-
+			
+			BlockPos position = new BlockPos(x,y+1, z);
+			worldIn.setBlockState(position, defaultState);
+				
+			BlockPos position2 = new BlockPos(x,y+2, z);
+			worldIn.setBlockState(position2, defaultState2);
+			
 		}
 
 	}
+
 
 }
