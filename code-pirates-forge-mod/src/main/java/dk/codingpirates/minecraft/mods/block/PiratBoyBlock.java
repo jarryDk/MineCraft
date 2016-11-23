@@ -1,9 +1,18 @@
 package dk.codingpirates.minecraft.mods.block;
 
+import java.util.List;
+
 import dk.codingpirates.minecraft.mods.CodingPiratesMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class PiratBoyBlock extends Block {
@@ -12,7 +21,6 @@ public class PiratBoyBlock extends Block {
 
 	public PiratBoyBlock() {
 		super(Material.GOURD);
-		// GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(CodingPiratesMod.MODID + "_" + name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
@@ -20,7 +28,6 @@ public class PiratBoyBlock extends Block {
 	public String getName() {
 		return name;
 	}
-	
 	
 	@Override
 	public void onBlockDestroyedByPlayer(World worldIn, 
@@ -33,11 +40,6 @@ public class PiratBoyBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
-		Block tnt = Blocks.TNT;
-		IBlockState defaultState = tnt.getDefaultState();
-		Block redstone = Blocks.REDSTONE_BLOCK;
-		IBlockState defaultState2 = redstone.getDefaultState();
 		
 		if (worldIn.isRemote) {
 
@@ -50,13 +52,6 @@ public class PiratBoyBlock extends Block {
 								+ " - y:" + y
 								+ " - z:" + z));
 			}
-			
-			BlockPos position = new BlockPos(x,y+1, z);
-			worldIn.setBlockState(position, defaultState);
-				
-			BlockPos position2 = new BlockPos(x,y+2, z);
-			worldIn.setBlockState(position2, defaultState2);
-			
 		}
 
 	}

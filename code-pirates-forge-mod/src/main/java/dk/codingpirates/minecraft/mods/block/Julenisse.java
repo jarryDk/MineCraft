@@ -4,14 +4,15 @@ import dk.codingpirates.minecraft.mods.CodingPiratesMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class PiratGirlBlock extends Block {
+public class Julenisse extends Block {
 	
-	private final String name = "piratGirlBlock";
+	private final String name = "julenisse";
 
-	public PiratGirlBlock() {
-		super(Material.GOURD);
+	public Julenisse() {
+		super(Material.WOOD);
 		setUnlocalizedName(CodingPiratesMod.MODID + "_" + name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
