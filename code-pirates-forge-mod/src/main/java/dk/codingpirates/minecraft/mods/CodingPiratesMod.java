@@ -1,5 +1,12 @@
 package dk.codingpirates.minecraft.mods;
 
+import org.devoxx4kids.forge.mods.ChatItems;
+import org.devoxx4kids.forge.mods.CreeperSpawnAlert;
+import org.devoxx4kids.forge.mods.EnchantmentArrowFast;
+import org.devoxx4kids.forge.mods.RainWater;
+import org.devoxx4kids.forge.mods.SharpSnowballs;
+import org.devoxx4kids.forge.mods.WallClimber;
+
 import dk.codingpirates.minecraft.mods.block.Julehjerte;
 import dk.codingpirates.minecraft.mods.block.Julekugle;
 import dk.codingpirates.minecraft.mods.block.Julenisse;
@@ -16,8 +23,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -43,6 +53,8 @@ public class CodingPiratesMod {
 	public static Block juletrae;
 
 	public static Item piratItem;
+	
+	public static final Enchantment haste = new EnchantmentArrowFast();
 
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
@@ -117,7 +129,19 @@ public class CodingPiratesMod {
 			// items
 			itemModelMesher.register(piratItem, 0, new ModelResourceLocation(
 					CodingPiratesMod.MODID + ":" + ((PiratItem) piratItem).getName(), "inventory"));
-
+			
+			/**
+			 * Devoxx4kids
+			 */
+			MinecraftForge.EVENT_BUS.register(new ChatItems());
+			MinecraftForge.EVENT_BUS.register(new CreeperSpawnAlert());
+			MinecraftForge.EVENT_BUS.register(new SharpSnowballs());
+			MinecraftForge.EVENT_BUS.register(new RainWater());
+			FMLCommonHandler.instance().bus().register(new WallClimber());
+			MinecraftForge.EVENT_BUS.register(new WallClimber());
+			MinecraftForge.EVENT_BUS.register(haste);
+			Enchantment.REGISTRY.register(100, new ResourceLocation("arrowFast"), haste);
+			
 		}
 
 		System.out.println("Jarry.Dk ...");
