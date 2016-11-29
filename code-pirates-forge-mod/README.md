@@ -7,9 +7,9 @@ Når vi skal bruge vores mod i multiplayer, så skal vi have bygget en jar fil, 
 
 - Rediger filen C:\MineCraftDevelopment\forge-1.10-12.18.0.2000-1.10.0-mdk\build.gradle
 
-'version = "0.3"
-group= "dk.codingpirates.minecraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "codingpirates"'
+	version = "0.3"
+	group= "dk.codingpirates.minecraft"
+	archivesBaseName = "codingpirates"
 
 - Åben programmet cmd
 - Skift til folderen C:\MineCraftDevelopment\forge-1.10-12.18.0.2000-1.10.0-mdk
@@ -17,6 +17,8 @@ archivesBaseName = "codingpirates"'
 - Kopier filen C:\MineCraftDevelopment\forge-1.10-12.18.0.2000-1.10.0-mdk\build\libs\codingpirates-0.3.jar til C:\Users\bruger\AppData\Roaming\.minecraft\mods\codingpirates-0.3.jar
 
 Hvis du ikke har installeret forge i din Minecraft, så er det tid til det nu - skal være version 1.10+ [forge-1.10.2-12.18.2.2166-installer.jar](http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.10.2-12.18.2.2166/forge-1.10.2-12.18.2.2166-installer.jar)
+
+Start Minecraft og vælg forge som profile ...
 
 13. september 2016
 ---
