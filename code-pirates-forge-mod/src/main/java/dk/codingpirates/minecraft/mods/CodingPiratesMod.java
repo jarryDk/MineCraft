@@ -6,10 +6,13 @@ import dk.codingpirates.minecraft.mods.block.Julenisse;
 import dk.codingpirates.minecraft.mods.block.Juletrae;
 import dk.codingpirates.minecraft.mods.block.PiratBoyBlock;
 import dk.codingpirates.minecraft.mods.block.PiratGirlBlock;
+import dk.codingpirates.minecraft.mods.crafting.Gold2MorCrafting;
+import dk.codingpirates.minecraft.mods.crafting.Ground2DimCrafting;
 import dk.codingpirates.minecraft.mods.item.TowerItems;
 import dk.codingpirates.minecraft.mods.item.PiratItem;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -59,6 +62,9 @@ public class CodingPiratesMod {
 		piratItem = new PiratItem();
 		GameRegistry.registerItem(piratItem, "piratItem");
 
+		Gold2MorCrafting.register();
+		Ground2DimCrafting.register();
+		
 	}
 
 	@EventHandler
@@ -67,35 +73,37 @@ public class CodingPiratesMod {
 		if (event.getSide() == Side.CLIENT) {
 
 			MinecraftForge.EVENT_BUS.register(new TowerItems());
+			
 
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+			ItemModelMesher itemModelMesher = renderItem.getItemModelMesher();
 
 			// blocks
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(piratBoyBlock), 0, new ModelResourceLocation(
+			itemModelMesher.register(Item.getItemFromBlock(piratBoyBlock), 0, new ModelResourceLocation(
 					CodingPiratesMod.MODID + ":" + ((PiratBoyBlock) piratBoyBlock).getName(), "inventory"));
 			
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(piratGirlBlock), 0,
+			itemModelMesher.register(Item.getItemFromBlock(piratGirlBlock), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((PiratGirlBlock) piratGirlBlock).getName(), "inventory"));
 
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(julehjerte), 0,
+			itemModelMesher.register(Item.getItemFromBlock(julehjerte), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((Julehjerte) julehjerte).getName(), "inventory"));
 
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(julekugle), 0,
+			itemModelMesher.register(Item.getItemFromBlock(julekugle), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((Julekugle) julekugle).getName(), "inventory"));
 
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(julenisse), 0,
+			itemModelMesher.register(Item.getItemFromBlock(julenisse), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((Julenisse) julenisse).getName(), "inventory"));
 
-			renderItem.getItemModelMesher().register(Item.getItemFromBlock(juletrae), 0,
+			itemModelMesher.register(Item.getItemFromBlock(juletrae), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((Juletrae) juletrae).getName(), "inventory"));
 			
 			// items
-			renderItem.getItemModelMesher().register(piratItem, 0, new ModelResourceLocation(
+			itemModelMesher.register(piratItem, 0, new ModelResourceLocation(
 					CodingPiratesMod.MODID + ":" + ((PiratItem) piratItem).getName(), "inventory"));
 
 		}
