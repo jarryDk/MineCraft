@@ -21,34 +21,29 @@ public class TowerItems {
 
 			BlockPos position = event.getPlayer().getPosition();
 			
-			Block blk = Blocks.GLOWSTONE;
-			IBlockState defaultState = blk.getDefaultState();
+			IBlockState state1 = Blocks.GLOWSTONE.getDefaultState();
 			
-			Block blk1 = Blocks.GRAVEL;
-			IBlockState defaultState1 = blk1.getDefaultState();
+			IBlockState state2 = Blocks.DIAMOND_BLOCK.getDefaultState();
 			
 			boolean glow = true;
 			
 			int startX = position.getX();
 			int startY = position.getY();
 			int startZ = position.getZ();
-			BlockPos position1 = null;
-
-			System.out.println("BlockPos pos=" + position.toString());
+			BlockPos positionNext = null;
 			
 			for (int z = 0 ; z < 10 ; z++){
 				for (int y = 0 ; y < 10 ; y++){
 					for (int x = 0 ; x < 10 ; x++){
 						if((z == 0 || z == 9) || (y == 0 || y == 9) || (x == 0 || x == 9)){
-							position1 = new BlockPos(position.getX() + x, position.getY() + y, position.getZ() + z);
+							positionNext = new BlockPos(position.getX() + x, position.getY() + y, position.getZ() + z);
 							if(glow){
-								world.setBlockState(position1, defaultState);
+								world.setBlockState(positionNext, state1);
 								glow = false;
 							}else{
-								world.setBlockState(position1, defaultState1);
+								world.setBlockState(positionNext, state2);
 								glow = true;
 							}
-							System.out.println("BlockPos pos0=" + position1.toString());	
 						}
 					}	
 				}				

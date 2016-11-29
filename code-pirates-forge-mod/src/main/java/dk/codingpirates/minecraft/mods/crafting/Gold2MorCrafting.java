@@ -12,7 +12,7 @@ public class Gold2MorCrafting {
 	
 	public static void register() {
 		GameRegistry.addShapedRecipe(
-				new ItemStack(CodingPiratesMod.piratBoyBlock), 
+				new ItemStack(CodingPiratesMod.morBlock), 
 				"GGG", 
 				"GGG", 
 				"GGG", 

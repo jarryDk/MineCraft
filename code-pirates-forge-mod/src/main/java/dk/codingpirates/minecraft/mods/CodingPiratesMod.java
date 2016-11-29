@@ -4,6 +4,7 @@ import dk.codingpirates.minecraft.mods.block.Julehjerte;
 import dk.codingpirates.minecraft.mods.block.Julekugle;
 import dk.codingpirates.minecraft.mods.block.Julenisse;
 import dk.codingpirates.minecraft.mods.block.Juletrae;
+import dk.codingpirates.minecraft.mods.block.MorBlock;
 import dk.codingpirates.minecraft.mods.block.PiratBoyBlock;
 import dk.codingpirates.minecraft.mods.block.PiratGirlBlock;
 import dk.codingpirates.minecraft.mods.crafting.Gold2MorCrafting;
@@ -33,6 +34,8 @@ public class CodingPiratesMod {
 
 	public static Block piratBoyBlock;
 	public static Block piratGirlBlock;
+	
+	public static Block morBlock;
 
 	public static Block julehjerte;
 	public static Block julekugle;
@@ -49,6 +52,10 @@ public class CodingPiratesMod {
 		GameRegistry.registerBlock(piratBoyBlock, "piratBoyBlock");
 		piratGirlBlock = new PiratGirlBlock();
 		GameRegistry.registerBlock(piratGirlBlock, "piratGirlBlock");
+		
+		morBlock = new MorBlock();
+		GameRegistry.registerBlock(morBlock, "morBlock");
+		
 		julehjerte = new Julehjerte();
 		GameRegistry.registerBlock(julehjerte, "julehjerte");
 		julekugle = new Julekugle();
@@ -86,6 +93,11 @@ public class CodingPiratesMod {
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((PiratGirlBlock) piratGirlBlock).getName(), "inventory"));
 
+			itemModelMesher.register(Item.getItemFromBlock(morBlock), 0,
+					new ModelResourceLocation(
+							CodingPiratesMod.MODID + ":" + ((MorBlock) morBlock).getName(), "inventory"));
+
+			
 			itemModelMesher.register(Item.getItemFromBlock(julehjerte), 0,
 					new ModelResourceLocation(
 							CodingPiratesMod.MODID + ":" + ((Julehjerte) julehjerte).getName(), "inventory"));
