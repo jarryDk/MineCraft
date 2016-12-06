@@ -18,6 +18,7 @@ import dk.codingpirates.minecraft.mods.crafting.Gold2MorCrafting;
 import dk.codingpirates.minecraft.mods.crafting.Ground2DimCrafting;
 import dk.codingpirates.minecraft.mods.item.TowerItems;
 import dk.codingpirates.minecraft.mods.item.PiratItem;
+import dk.codingpirates.minecraft.mods.item.VarmKakao;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
@@ -54,6 +55,8 @@ public class CodingPiratesMod {
 
 	public static Item piratItem;
 	
+	public static Item varmKakao;
+	
 	public static final Enchantment haste = new EnchantmentArrowFast();
 
 	@EventHandler
@@ -81,6 +84,10 @@ public class CodingPiratesMod {
 		piratItem = new PiratItem();
 		GameRegistry.registerItem(piratItem, "piratItem");
 
+		varmKakao = new VarmKakao();
+		GameRegistry.registerItem(varmKakao, "varmKakao");
+
+		
 		Gold2MorCrafting.register();
 		Ground2DimCrafting.register();
 		
@@ -129,6 +136,10 @@ public class CodingPiratesMod {
 			// items
 			itemModelMesher.register(piratItem, 0, new ModelResourceLocation(
 					CodingPiratesMod.MODID + ":" + ((PiratItem) piratItem).getName(), "inventory"));
+			
+			itemModelMesher.register(varmKakao, 0, new ModelResourceLocation(
+					CodingPiratesMod.MODID + ":" + ((VarmKakao) varmKakao).getName(), "inventory"));
+			
 			
 			/**
 			 * Devoxx4kids
