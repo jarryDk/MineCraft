@@ -1,6 +1,15 @@
 MineCraft
 =========
 
+Update after a 4 years coffie break.
+
+
+Getting Started with Forge -> https://mcforge.readthedocs.io/en/latest/gettingstarted/
+
+Get the code -> http://files.minecraftforge.net/
+
+
+
 If one can have a favorit seed, my would be 5065005039813119575.
 
 code-pirates-forge-mod
