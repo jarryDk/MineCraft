@@ -9,6 +9,10 @@ Getting Started with Forge -> https://mcforge.readthedocs.io/en/latest/gettingst
 Get the code -> http://files.minecraftforge.net/
 
 
+The Book of Minecraft Modding -> https://thebookofmodding.ml/
+
+
+--------------------------------------------------
 
 If one can have a favorit seed, my would be 5065005039813119575.
 
