@@ -1,0 +1,14 @@
+= Android Minecraft
+
+App to show people online on `Minecraft Bornholdt-Nielsen`
+
+== Links
+
+https://developer.android.com/codelabs/build-your-first-android-app#9
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-icon#0
+
+https://codelabs.developers.google.com/?cat=android
+https://www.androidauthority.com/android-app-development-1128595/
+
+https://jgilfelt.github.io/AndroidAssetStudio/icons-launcher.html
