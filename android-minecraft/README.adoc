@@ -8,6 +8,15 @@ https://developer.android.com/codelabs/build-your-first-android-app#9
 
 https://developer.android.com/codelabs/basic-android-kotlin-training-change-app-icon#0
 
+https://developer.android.com/guide/webapps/webview[Building web apps in WebView]
+https://www.journaldev.com/9333/android-webview-example-tutorial[Android WebView Example Tutorial]
+
+
+https://developer.android.com/training/data-storage/shared-preferences
+https://stuff.mit.edu/afs/sipb/project/android/docs/training/basics/data-storage/shared-preferences.html
+
+https://www.journaldev.com/9412/android-shared-preferences-example-tutorial
+
 https://codelabs.developers.google.com/?cat=android
 https://www.androidauthority.com/android-app-development-1128595/
 
