@@ -1,0 +1,59 @@
+= MineCraft Server
+
+https://minecraft.net/da/download/server[Download MineCraft Server]
+
+*Default way to start the server*
+[source,bash]
+----
+java -Xmx1024M -Xms1024M -jar server.jar nogui
+----
+
+== Start server with script
+
+Script will start the Minecraft server if
+
+- JAVA_HOME is a directory
+- server_$MINECRAFT_VERSION.jar is a file
+
+Script will use a `trap` if the server crash to restart it.
+
+[source,bash]
+----
+./start-server-with-pid.sh
+----
+
+== Cat log from 'start-server-with-pid.sh'
+
+*Cat log from today*
+[source,bash]
+----
+./log-cat.sh
+----
+
+*Cat log from any given day (<YYYYMMDD>)*
+[source,bash]
+----
+./log-cat.sh 20220113
+----
+
+== Tail log from 'start-server-with-pid.sh'
+
+*Tail log from today*
+[source,bash]
+----
+./log-tail.sh
+----
+
+*Tail log from any given day (<YYYYMMDD>)*
+[source,bash]
+----
+./log-tail.sh 20220113
+----
+
+
+
+== Sidenotes
+
+http://minecraft.gamepedia.com/Server.properties[server.properties]
+
+* level-seed=5065005039813119575 
